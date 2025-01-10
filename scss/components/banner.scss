@@ -1,0 +1,84 @@
+.banner {
+  width: 100%;
+  background-image: url(../../images/banner-1-bg.png);
+  background-repeat: no-repeat;
+
+  &_wrapper {
+    display: flex;
+    padding: 0rem 7rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: $primary_color_1;
+  }
+
+  &_p {
+    margin-bottom: 4rem;
+  }
+
+  &_content {
+    text-align: right;
+  }
+}
+
+.banner_2 {
+  width: 100%;
+  background-image: url(../../images/banner-2-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &_wrapper {
+    display: flex;
+    padding: 7rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: $primary_color_1;
+  }
+
+  &_p {
+    margin-bottom: 4rem;
+  }
+
+  &_content {
+    width: 45%;
+    ;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .banner {
+    width: 100%;
+    background-image: url(../../images/banner-1-mobile.png);
+    background-repeat: no-repeat;
+    height: 60rem;
+
+    &_wrapper {
+      display: flex;
+      padding: 4rem 2rem 0rem 2rem;
+      width: 100%;
+    }
+
+    &_content {
+      text-align: left;
+    }
+
+    &_img {
+      display: none;
+    }
+  }
+
+  .banner_2 {
+    display: none;
+  }
+}

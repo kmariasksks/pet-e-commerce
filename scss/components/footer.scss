@@ -1,0 +1,124 @@
+.footer {
+  width: 100%;
+  margin-top: 10rem;
+  background-color: $secondary_color_1;
+
+  &_copyright {
+    color: $grey;
+  }
+
+  &_container {
+    padding: 8rem 0rem;
+  }
+
+  &_top {
+    background-color: $primary_color_1;
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+    &_heading {
+      width: 40%;
+      color: $white;
+    }
+
+    &_form {
+      width: 60%;
+      background-color: $secondary_color_3;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+
+      &_input {
+        padding: 1.1rem;
+        width: 80%;
+      }
+
+      &_btn {
+        background-color: $primary_color_1;
+        outline: none;
+        border: none;
+        color: $white;
+        width: 18%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_middle {
+    border-bottom: 1px solid $secondary_color_2;
+  }
+
+  .nav_link {
+    color: $text;
+  }
+
+  &_bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+
+    &_list {
+      list-style: none;
+      display: flex;
+    }
+
+    &_link {
+      text-decoration: none;
+      margin-left: 2rem;
+      color: $grey;
+    }
+  }
+}
+
+// .nav_link {
+//   color: $text;
+// }
+
+@media only screen and (max-width: 650px) {
+  .footer {
+    width: 100%;
+    margin-top: 10rem;
+    background-color: $secondary_color_1;
+
+    &_top {
+      flex-direction: column;
+
+      &_heading {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      &_form {
+        width: 100%;
+        background-color: $secondary_color_3;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+
+        &_input {
+          padding: 1.1rem;
+          width: 100%;
+        }
+
+        &_btn {
+          width: 100%;
+        }
+      }
+    }
+
+    &_nav_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_bottom {
+      padding: 0rem 1.5rem;
+      flex-direction: column;
+    }
+  }
+}
